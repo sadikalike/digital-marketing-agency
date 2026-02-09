@@ -22,7 +22,7 @@ import ClientImg07 from "@/public/images/client-logo-07.svg";
 import ClientImg08 from "@/public/images/client-logo-08.svg";
 import ClientImg09 from "@/public/images/client-logo-09.svg";
 
-const testimonials = [
+ const testimonials = [
   {
     img: TestimonialImg01,
     clientImg: ClientImg01,
@@ -106,11 +106,13 @@ const testimonials = [
   },
 ];
 
+
 export default function Testimonials() {
   const masonryContainer = useMasonry();
   const [category, setCategory] = useState<number>(1);
 
   return (
+    <section id="work" className="scroll-mt-24">
     <div className="mx-auto max-w-6xl px-4 sm:px-6">
       <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
         {/* Section header */}
@@ -121,7 +123,7 @@ export default function Testimonials() {
           <p className="text-lg text-indigo-200/65">
             We provide tech-first solutions that empower decision-makers to
             build healthier and happier workspaces from anywhere in the world.
-          </p>
+          </p> 
         </div>
 
         <div>
@@ -227,6 +229,7 @@ export default function Testimonials() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 
