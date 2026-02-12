@@ -21,9 +21,9 @@ export default function Workflows() {
               Map your product journey
             </h2>
             <p className="text-lg text-indigo-200/65">
-              Simple and elegant interface to start collaborating with your team
-              in minutes. It seamlessly integrates with your code and your
-              favorite programming languages.
+             Nexo Digital Agency is a results-driven digital marketing firm enabling ambitious brands to scale with confidence and strategic precision.
+We integrate data-backed strategy, creative excellence, and performance-focused execution to accelerate customer acquisition.
+From brand positioning to high-conversion campaigns, we deliver measurable growth and long-term business value.
             </p>
           </div>
           {/* Spotlight items */}
@@ -64,13 +64,14 @@ export default function Workflows() {
                   <div className="mb-3">
                     <span className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-gray-700/.15),--theme(--color-gray-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60">
                       <span className="bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                        Built-in Tools
+                        Performance Marketing
                       </span>
                     </span>
                   </div>
                   <p className="text-indigo-200/65">
-                    Streamline the product development flow with a content
-                    platform that's aligned across specs and insights.
+                 We create high-converting ad campaigns designed to generate quality leads.
+Our approach focuses on targeting precision, budget optimization, and ROI.
+Every campaign is continuously analyzed and improved for maximum results.
                   </p>
                 </div>
               </div>
@@ -111,13 +112,14 @@ export default function Workflows() {
                   <div className="mb-3">
                     <span className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-gray-700/.15),--theme(--color-gray-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60">
                       <span className="bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                        Scale Instantly
+                        Social Media & Brand Growth
                       </span>
                     </span>
                   </div>
                   <p className="text-indigo-200/65">
-                    Streamline the product development flow with a content
-                    platform that's aligned across specs and insights.
+                    We establish a strong and consistent brand presence across key digital platforms.
+Our strategic content initiatives enhance engagement, visibility, and audience trust.
+Through structured brand positioning, we convert engagement into measurable customer growth.
                   </p>
                 </div>
               </div>
@@ -158,13 +160,14 @@ export default function Workflows() {
                   <div className="mb-3">
                     <span className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-gray-700/.15),--theme(--color-gray-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60">
                       <span className="bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                        Tailored Flows
+                       Creative Strategy & Content
                       </span>
                     </span>
                   </div>
                   <p className="text-indigo-200/65">
-                    Streamline the product development flow with a content
-                    platform that's aligned across specs and insights.
+                    We design impactful creatives that capture attention instantly.
+From promotional visuals to AI-powered videos, we create content that converts.
+Our focus is to communicate brand value clearly and effectively.
                   </p>
                 </div>
               </div>
