@@ -21,7 +21,7 @@ export default function HeroHome() {
               md:text-5xl"
               data-aos="fade-up"
             >
-              Hi Sadik, how are you
+              Grow Your Business with Nexo Digital
             </h1>
 
             <div className="mx-auto max-w-3xl">
@@ -30,8 +30,7 @@ export default function HeroHome() {
                 data-aos="fade-up"
                 data-aos-delay={200}
               >
-                Our landing page template works on all devices, so you only have
-                to set it up once, and get beautiful results forever.
+                We help businesses grow with high-converting marketing strategies, powerful content, and data-driven campaigns.
               </p>
 
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
