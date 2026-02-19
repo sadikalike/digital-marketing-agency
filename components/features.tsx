@@ -34,15 +34,15 @@ export default function Features() {
         <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-4 text-center md:pb-12">
-            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-indigo-200/50">
-              <span className="inline-flex bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
+            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-blue-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-blue-200/50">
+              <span className="inline-flex bg-linear-to-r from-blue-500 to-blue-200 bg-clip-text text-transparent">
                 Our Services
               </span>
             </div>
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),#60a5fa,var(--color-gray-50),#3b82f6,var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
               Performance-Driven Growth Solutions
             </h2>
-            <p className="text-lg text-indigo-200/65">
+            <p className="text-lg text-blue-200/65">
              At Nexo Digital Agency, we deliver strategic, performance-driven digital marketing solutions designed to generate measurable growth and long-term brand value.
             </p>
           </div>
@@ -59,7 +59,7 @@ export default function Features() {
           <div className="mx-auto grid max-w-sm gap-12 sm:max-w-none sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-blue-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -73,7 +73,7 @@ export default function Features() {
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Performance Marketing & Paid Advertising
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-blue-200/65">
                We create data-driven ad campaigns focused on lead generation and revenue growth.
 Our team optimizes targeting, creatives, and budgets to maximize ROI.
 Every campaign is continuously monitored and scaled for peak performance.
@@ -81,7 +81,7 @@ Every campaign is continuously monitored and scaled for peak performance.
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-blue-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -92,7 +92,7 @@ Every campaign is continuously monitored and scaled for peak performance.
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                Social Media Marketing
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-blue-200/65">
                We build strong brand presence across relevant digital platforms.
 Our content strategies are designed to increase engagement and audience trust.
 We align social communication with clear business objectives.
@@ -100,7 +100,7 @@ We align social communication with clear business objectives.
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-blue-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -114,7 +114,7 @@ We align social communication with clear business objectives.
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Search Engine Optimization (SEO)
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-blue-200/65">
                We improve your website’s visibility on search engines through strategic optimization.
 Our approach includes keyword research, technical SEO, and content enhancement.
 The goal is to drive consistent, high-intent organic traffic.
@@ -122,7 +122,7 @@ The goal is to drive consistent, high-intent organic traffic.
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-blue-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -141,7 +141,7 @@ The goal is to drive consistent, high-intent organic traffic.
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
              Lead Generation & Funnel Strategy
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-blue-200/65">
                We design structured marketing funnels that convert visitors into qualified leads.
 From landing pages to follow-up systems, every stage is optimized.
 Our focus is on improving conversion rates and customer acquisition.
@@ -149,7 +149,7 @@ Our focus is on improving conversion rates and customer acquisition.
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-blue-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -163,7 +163,7 @@ Our focus is on improving conversion rates and customer acquisition.
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Branding & Creative Strategy
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-blue-200/65">
                 We develop strong brand identities that stand out in competitive markets.
 From visual design to messaging strategy, we ensure consistency and clarity.
 Our creative direction supports long-term brand positioning.
@@ -171,7 +171,7 @@ Our creative direction supports long-term brand positioning.
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-blue-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -185,7 +185,7 @@ Our creative direction supports long-term brand positioning.
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Content Marketing & Creative Production
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-blue-200/65">
                 We create high-impact digital content tailored for performance.
 This includes promotional creatives, campaign visuals, and AI-powered videos.
 Our content is designed to capture attention and drive action.
