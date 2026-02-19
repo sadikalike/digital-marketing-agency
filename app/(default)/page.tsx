@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
+  title: "Nexo Digital Agency",
+  description: "Creative digital marketing and branding solutions to grow your business and generate real results online — Nexo Digital.",
 };
 
 import PageIllustration from "@/components/page-illustration";

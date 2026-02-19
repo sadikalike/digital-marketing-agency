@@ -8,7 +8,7 @@
 
 Use it for whatever you want, and be sure to reach us out on [Twitter](https://twitter.com/Cruip_com) if you build anything cool/useful with it.
 
-Created and maintained with ❤️ by [nexo.com](https://cruip.com).
+Created and maintained with ❤️ by [nexo.com](https://nexodigitall.com).
 
 _Version 1.0.0 built with the Cruip CSS is available [here](https://github.com/cruip/open-react-template/releases/tag/1.0.0)._
 _Version 2.0.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/cruip/open-react-template/releases/tag/2.0.3)._
@@ -20,7 +20,7 @@ Check the live demo here 👉️ [https://open.cruip.com/](https://open.cruip.co
 
 ## Open PRO
 
-[![Open Pro](https://github.com/user-attachments/assets/2062c728-95f1-4d59-aa2d-d63556f625d5)](https://cruip.com/)
+[![Open ](https://github.com/user-attachments/assets/2062c728-95f1-4d59-aa2d-d63556f625d5)](https://cruip.com/)
 
 ## Design files
 
