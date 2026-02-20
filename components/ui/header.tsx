@@ -18,6 +18,7 @@ export default function Header() {
 
           {/* CENTER : Desktop Menu */}
           <ul className="hidden md:flex items-center gap-6 list-none">
+            <li><Link href="/#home" className="text-sm text-gray-300 hover:text-white">Home</Link></li>
             <li><Link href="/#about" className="text-sm text-gray-300 hover:text-white">About</Link></li>
             <li><Link href="/#services" className="text-sm text-gray-300 hover:text-white">Services</Link></li>
             <li><Link href="/#work" className="text-sm text-gray-300 hover:text-white">Work</Link></li>
@@ -50,6 +51,7 @@ export default function Header() {
         {/* MOBILE MENU */}
         {menuOpen && (
           <div className="md:hidden mt-3 rounded-xl bg-gray-900 border border-gray-700 p-4 space-y-3">
+            <Link href="/#home" className="block text-gray-300">Home</Link>
             <Link href="/#about" className="block text-gray-300">About</Link>
             <Link href="/#services" className="block text-gray-300">Services</Link>
             <Link href="/#work" className="block text-gray-300">Work</Link>

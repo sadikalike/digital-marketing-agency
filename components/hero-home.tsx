@@ -7,7 +7,7 @@ export default function HeroHome() {
   const whatsappLink = "https://wa.me/message/623IU7KBDAFIH1";
 
   return (
-    <section className="relative">
+    <section id="home"  className="relative">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Hero content */}
         <div className="py-12 md:py-20">
