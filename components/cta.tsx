@@ -1,6 +1,5 @@
 "use client";
 
-
 import Image from "next/image";
 import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
@@ -21,7 +20,7 @@ export default function Contact() {
   const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(null);
   const [statusMessage, setStatusMessage] = useState("");
 
-  // ✅ ನಿಮ್ಮ EmailJS credentials - ಇವುಗಳನ್ನು ಹಾಕಿದ್ದೀರಾ?
+  // ನಿಮ್ಮ EmailJS credentials
   const EMAILJS_SERVICE_ID = "service_0s5mpsp";
   const EMAILJS_TEMPLATE_ID = "template_wja0q1e";
   const EMAILJS_PUBLIC_KEY = "3hhYTPcssbfZXSCcJ";
@@ -37,7 +36,6 @@ export default function Contact() {
     setSubmitStatus(null);
     
     try {
-      // EmailJS ಗೆ ಕಳುಹಿಸಿ
       const result = await emailjs.sendForm(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
@@ -47,11 +45,9 @@ export default function Contact() {
 
       console.log("Email sent successfully:", result.text);
       
-      // ಸಕ್ಸೆಸ್
       setSubmitStatus("success");
       setStatusMessage("Thank you! Your message has been sent successfully. We'll get back to you soon.");
       
-      // ಫಾರ್ಮ್ ಕ್ಲಿಯರ್ ಮಾಡಿ
       setFormData({
         name: "",
         email: "",
@@ -64,11 +60,10 @@ export default function Contact() {
     } catch (error) {
       console.error("Email send failed:", error);
       setSubmitStatus("error");
-      setStatusMessage("Failed to send message. Please try again or email us directly at hello@nexodigital.com");
+      setStatusMessage("Failed to send message. Please try again or email us directly.");
     } finally {
       setIsSubmitting(false);
       
-      // 5 ಸೆಕೆಂಡ್ ನಂತರ ಸ್ಟೇಟಸ್ ಮೆಸೇಜ್ ಕ್ಲಿಯರ್ ಮಾಡಿ
       setTimeout(() => {
         setSubmitStatus(null);
       }, 5000);
@@ -253,13 +248,42 @@ export default function Contact() {
               </form>
             </div>
 
-            {/* Right Side - Contact Information */}
+            {/* Right Side - Contact Information (Updated with your details) */}
             <div className="space-y-6" data-aos="fade-left">
               {/* Contact Info Cards */}
               <div className="bg-blue-900/20 backdrop-blur-sm p-6 md:p-8 rounded-xl border border-blue-400/20">
                 <h3 className="text-2xl font-semibold text-white mb-6">Contact Information</h3>
                 
                 <div className="space-y-4">
+                  {/* Phone - Your Mobile Number */}
+                  <div className="flex items-start space-x-3">
+                    <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-sm text-blue-200">Call Us / WhatsApp</p>
+                      <a 
+                        href="tel:+917510436350" 
+                        className="text-white hover:text-blue-300 transition-colors text-lg font-medium block"
+                      >
+                        +91 75104 36350
+                      </a>
+                      <a 
+                        href="https://wa.me/917510436350" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-green-400 hover:text-green-300 text-sm flex items-center gap-1 mt-1"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.585 2.143 2.184-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.786-5.763-5.786z" />
+                        </svg>
+                        WhatsApp
+                      </a>
+                    </div>
+                  </div>
+
                   {/* Email */}
                   <div className="flex items-start space-x-3">
                     <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -275,22 +299,7 @@ export default function Contact() {
                     </div>
                   </div>
 
-                  {/* Phone */}
-                  <div className="flex items-start space-x-3">
-                    <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-sm text-blue-200">Call Us</p>
-                      <a href="tel:+919876543210" className="text-white hover:text-blue-300 transition-colors">
-                        +91 98765 43210
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Location */}
+                  {/* Location - Your Address */}
                   <div className="flex items-start space-x-3">
                     <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
                       <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -301,10 +310,21 @@ export default function Contact() {
                     <div>
                       <p className="text-sm text-blue-200">Office Address</p>
                       <p className="text-white">
-                        123 Business Avenue<br />
-                        Bengaluru, Karnataka 560001<br />
-                        India
+                        Vittal, Mangalore<br />
+                        Dakshina Kannada District<br />
+                        Karnataka, India - 574243
                       </p>
+                      <a 
+                        href="https://maps.google.com/?q=Vittal+Mangalore+Karnataka" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-blue-300 hover:text-blue-200 text-sm flex items-center gap-1 mt-2"
+                      >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                        </svg>
+                        View on Google Maps
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -313,7 +333,7 @@ export default function Contact() {
                 <div className="mt-6 pt-6 border-t border-blue-800/30">
                   <p className="text-sm text-blue-200 mb-3">Follow Us</p>
                   <div className="flex space-x-3">
-                    {["LinkedIn", "Twitter", "Instagram"].map((social) => (
+                    {["LinkedIn", "Twitter", "Instagram", "Facebook"].map((social) => (
                       <a
                         key={social}
                         href="#"
@@ -327,21 +347,20 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Office Hours */}
+              {/* Business Hours */}
               <div className="bg-blue-900/20 backdrop-blur-sm p-6 rounded-xl border border-blue-400/20">
-                <h4 className="text-lg font-semibold text-white mb-3">Office Hours</h4>
+                <h4 className="text-lg font-semibold text-white mb-3">Business Hours</h4>
                 <div className="space-y-2 text-blue-100">
                   <div className="flex justify-between">
-                    <span>Monday - Friday:</span>
-                    <span>9:00 AM - 6:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Saturday:</span>
-                    <span>10:00 AM - 2:00 PM</span>
+                    <span>Monday - Saturday:</span>
+                    <span>9:00 AM - 8:00 PM</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Sunday:</span>
                     <span>Closed</span>
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-blue-800/30 text-sm">
+                    <p className="text-blue-300">📱 Available on WhatsApp for quick responses</p>
                   </div>
                 </div>
               </div>
